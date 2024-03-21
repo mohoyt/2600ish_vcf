@@ -1295,9 +1295,6 @@
   (junction (at 52.07 257.81) (diameter 0) (color 0 0 0 0)
     (uuid b99a98c6-a225-4a3f-badf-80b5c11bbcdf)
   )
-  (junction (at 73.66 170.18) (diameter 0) (color 0 0 0 0)
-    (uuid c217fccd-8447-4bfb-aa9d-085ac81cd746)
-  )
   (junction (at 205.74 116.84) (diameter 0) (color 0 0 0 0)
     (uuid c3e385fb-8b6e-48b3-9462-6d88abf9e89d)
   )
@@ -1564,17 +1561,9 @@
     (stroke (width 0) (type default))
     (uuid 313f26f7-8f09-4386-b068-9b85d58e7348)
   )
-  (wire (pts (xy 52.07 170.18) (xy 73.66 170.18))
-    (stroke (width 0) (type default))
-    (uuid 3328f48f-d850-43b6-8fbb-571d92e7e5f0)
-  )
   (wire (pts (xy 92.71 55.88) (xy 101.6 55.88))
     (stroke (width 0) (type default))
     (uuid 3349c596-4152-42fd-901d-5ad3e0f7ca6f)
-  )
-  (wire (pts (xy 24.13 166.37) (xy 40.64 166.37))
-    (stroke (width 0) (type default))
-    (uuid 33eb173a-1faf-42ec-81d6-689046e8c460)
   )
   (wire (pts (xy 184.15 133.35) (xy 187.96 133.35))
     (stroke (width 0) (type default))
@@ -2036,10 +2025,6 @@
     (stroke (width 0) (type default))
     (uuid bb13965a-f3d1-42b6-8224-193c81694f54)
   )
-  (wire (pts (xy 26.67 163.83) (xy 24.13 163.83))
-    (stroke (width 0) (type default))
-    (uuid bc218619-8ed0-4390-8da5-1d8dfd98d398)
-  )
   (wire (pts (xy 326.39 21.59) (xy 326.39 24.13))
     (stroke (width 0) (type default))
     (uuid bcb9389b-04a4-429d-b96b-f10ed9ed3cd1)
@@ -2292,6 +2277,11 @@
   (text "RESONANCE" (at 332.74 22.86 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6e9701bc-78df-4b8c-9881-64c413224b38)
+  )
+  (text "CV2 was here originally too, but \narguably not implemented in a modular way"
+    (at 26.67 166.37 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid a6e980ee-ce3e-4e83-b821-86093732d119)
   )
   (text "V/OCT TRIM" (at 83.82 180.34 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -2797,41 +2787,6 @@
       (project "vca"
         (path "/fe7d4d29-371c-4395-a62c-d7aafcf6ebb6"
           (reference "R11") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 24.13 168.91 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 1226a819-b570-4a87-8d05-e10ad51635c0)
-    (property "Reference" "#PWR01" (at 24.13 175.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 26.67 170.815 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 24.13 168.91 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 24.13 168.91 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c268d5ad-644c-4a2f-9eee-90e5a69077b7))
-    (instances
-      (project "wavefolder"
-        (path "/087cf830-977a-4f3a-8374-1866c7a4ce4d"
-          (reference "#PWR01") (unit 1)
-        )
-      )
-      (project "2600ish_vcf"
-        (path "/c7d0818f-fdb2-4626-8cac-3945030725c8"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-      (project "3340_vco"
-        (path "/e44f9621-e2e4-4d7b-a40a-88005ff44320"
-          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -5074,41 +5029,6 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 40.64 173.99 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 7ad18af7-5bb1-40e7-8cb2-16d80c042648)
-    (property "Reference" "#PWR01" (at 40.64 180.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 40.64 179.07 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 40.64 173.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 40.64 173.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1d1a0746-44dc-4e21-b105-1df9eb4ac181))
-    (instances
-      (project "wavefolder"
-        (path "/087cf830-977a-4f3a-8374-1866c7a4ce4d"
-          (reference "#PWR01") (unit 1)
-        )
-      )
-      (project "2600ish_vcf"
-        (path "/c7d0818f-fdb2-4626-8cac-3945030725c8"
-          (reference "#PWR016") (unit 1)
-        )
-      )
-      (project "3340_vco"
-        (path "/e44f9621-e2e4-4d7b-a40a-88005ff44320"
-          (reference "#PWR015") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R_Potentiometer") (at 73.66 181.61 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7bc7629a-ebaa-4d93-8f9a-d64814f90c8d)
@@ -5381,43 +5301,6 @@
     )
   )
 
-  (symbol (lib_id "Device:R_Potentiometer") (at 40.64 170.18 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 849af35f-773e-4052-aa8d-8d9a50e62a58)
-    (property "Reference" "R1" (at 38.1 170.815 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "50K lin" (at 38.1 168.275 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" (at 40.64 170.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 40.64 170.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8a13c1ac-e9ac-4308-8412-cee8276883c8))
-    (pin "2" (uuid 8f0ff868-ac32-4f0f-bae2-d57d7ff5eb7f))
-    (pin "3" (uuid 12ca8781-3980-4d9f-8921-7cb06290f388))
-    (instances
-      (project "wavefolder"
-        (path "/087cf830-977a-4f3a-8374-1866c7a4ce4d"
-          (reference "R1") (unit 1)
-        )
-      )
-      (project "2600ish_vcf"
-        (path "/c7d0818f-fdb2-4626-8cac-3945030725c8"
-          (reference "P6") (unit 1)
-        )
-      )
-      (project "3340_vco"
-        (path "/e44f9621-e2e4-4d7b-a40a-88005ff44320"
-          (reference "RV1") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R") (at 330.2 45.72 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 84f8ad69-915e-40aa-99a4-7eb644bd155e)
@@ -5657,67 +5540,6 @@
       (project "vca"
         (path "/fe7d4d29-371c-4395-a62c-d7aafcf6ebb6"
           (reference "D2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 48.26 170.18 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 8d62ff08-aabf-48f2-ac28-a6ebd5fd49bd)
-    (property "Reference" "R19" (at 48.26 165.1 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100k" (at 48.26 167.64 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 48.26 171.958 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 48.26 170.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7bb588f3-35b6-44a4-9f42-eb924a7f4e14))
-    (pin "2" (uuid a59f16e1-f578-4148-8960-a7a06d6277f0))
-    (instances
-      (project "wavefolder"
-        (path "/087cf830-977a-4f3a-8374-1866c7a4ce4d"
-          (reference "R19") (unit 1)
-        )
-      )
-      (project "Envelope"
-        (path "/ba27d45c-96d8-4b70-a06a-89e5290083ce"
-          (reference "R5") (unit 1)
-        )
-      )
-      (project "sample_and_hold"
-        (path "/bb8310b0-b57c-4085-9792-92e00bb22ccf"
-          (reference "R4") (unit 1)
-        )
-      )
-      (project "2600ish_vcf"
-        (path "/c7d0818f-fdb2-4626-8cac-3945030725c8"
-          (reference "R30") (unit 1)
-        )
-      )
-      (project "vcf"
-        (path "/e34d1c53-5e92-43b6-afc5-144ee0224b25"
-          (reference "R10") (unit 1)
-        )
-      )
-      (project "3340_vco"
-        (path "/e44f9621-e2e4-4d7b-a40a-88005ff44320"
-          (reference "R29") (unit 1)
-        )
-      )
-      (project "vco"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "R14") (unit 1)
-        )
-      )
-      (project "vca"
-        (path "/fe7d4d29-371c-4395-a62c-d7aafcf6ebb6"
-          (reference "R11") (unit 1)
         )
       )
     )
@@ -6898,68 +6720,6 @@
       (project "3340_vco"
         (path "/e44f9621-e2e4-4d7b-a40a-88005ff44320"
           (reference "#PWR015") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Audio:AudioJack2_SwitchT") (at 19.05 166.37 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid adb05dea-79ba-4ea7-8a72-882db29bb49e)
-    (property "Reference" "J2" (at 18.415 158.75 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "CV2" (at 18.415 161.29 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" (at 19.05 166.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 19.05 166.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "S" (uuid d42be115-94b6-421d-89a4-c930b05f9642))
-    (pin "T" (uuid 5dbf4431-767d-4bad-908b-3a91e3c3d562))
-    (pin "TN" (uuid 2f64a77a-923a-460e-9fe6-63ac7feebd82))
-    (instances
-      (project "wavefolder"
-        (path "/087cf830-977a-4f3a-8374-1866c7a4ce4d"
-          (reference "J2") (unit 1)
-        )
-      )
-      (project "Envelope"
-        (path "/ba27d45c-96d8-4b70-a06a-89e5290083ce"
-          (reference "J1") (unit 1)
-        )
-      )
-      (project "sample_and_hold"
-        (path "/bb8310b0-b57c-4085-9792-92e00bb22ccf"
-          (reference "J1") (unit 1)
-        )
-      )
-      (project "2600ish_vcf"
-        (path "/c7d0818f-fdb2-4626-8cac-3945030725c8"
-          (reference "J6") (unit 1)
-        )
-      )
-      (project "vcf"
-        (path "/e34d1c53-5e92-43b6-afc5-144ee0224b25"
-          (reference "J6") (unit 1)
-        )
-      )
-      (project "3340_vco"
-        (path "/e44f9621-e2e4-4d7b-a40a-88005ff44320"
-          (reference "J2") (unit 1)
-        )
-      )
-      (project "vco"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "J1") (unit 1)
-        )
-      )
-      (project "vca"
-        (path "/fe7d4d29-371c-4395-a62c-d7aafcf6ebb6"
-          (reference "XS2") (unit 1)
         )
       )
     )
@@ -8598,41 +8358,6 @@
       (project "2600ish_vcf"
         (path "/c7d0818f-fdb2-4626-8cac-3945030725c8"
           (reference "Q7") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 26.67 163.83 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid fe3fd6c4-2b8e-415f-9654-e22a7cc67626)
-    (property "Reference" "#PWR01" (at 26.67 170.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 26.67 168.91 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 26.67 163.83 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 26.67 163.83 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6846d4dc-937a-4886-ae54-7592d4f58b31))
-    (instances
-      (project "wavefolder"
-        (path "/087cf830-977a-4f3a-8374-1866c7a4ce4d"
-          (reference "#PWR01") (unit 1)
-        )
-      )
-      (project "2600ish_vcf"
-        (path "/c7d0818f-fdb2-4626-8cac-3945030725c8"
-          (reference "#PWR024") (unit 1)
-        )
-      )
-      (project "3340_vco"
-        (path "/e44f9621-e2e4-4d7b-a40a-88005ff44320"
-          (reference "#PWR015") (unit 1)
         )
       )
     )
