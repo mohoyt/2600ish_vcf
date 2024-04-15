@@ -1,5 +1,27 @@
 # 2600ish_vcf
 
+![Panel front](img/front.jpeg)
+
+This is a fully through hole component Eurorack voltage controlled low pass filter based on the one in the ARP 2600. There were different filters in the ARP 2600 at different times, this is the 4072 variety and is not a diode ladder filter like the early one. 
+
+Inspiration and the starting point for schematics for this filter taken from [Eddy Bergman](https://www.eddybergman.com/2020/03/synthesizer-build-part-21-arp2600.html) and [Yusynth](http://yusynth.net/Modular/EN/ARPVCF/index.html)
+
+This module is 10hp (~50mm) wide and runs on a standard dual rail 12v eurorack supply.
+
+Special thanks to [PCBWay](https://pcbway.com) for sponsoring this build.
+
+## Gerbers
+
+See the most recent gerbers on the releases tab. The gerbers included are configured for PCBWay. There are two sets, one for the panel and one for the PCB. 
+
+## Bill of Materials
+
+![iBOM](img/ibom.png)
+
+See the iBOM in the [BOM](BOM) folder
+
+![Panel back](img/back.jpeg)
+
 ## Calibration and tuning 
 
 Taken from [Yusynth](http://yusynth.net/Modular/index_en.html)
