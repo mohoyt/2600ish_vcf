@@ -8,6 +8,8 @@ Inspiration and the starting point for schematics for this filter taken from [Ed
 
 This module is 10hp (~50mm) wide and runs on a standard dual rail 12v eurorack supply.
 
+See a longer write up of this project on my website: [https://mohoyt.com/blog/2024/2600ish-vcf](https://mohoyt.com/blog/2024/2600ish-vcf)
+
 Special thanks to [PCBWay](https://pcbway.com) for sponsoring this build.
 
 ## Gerbers
@@ -16,9 +18,9 @@ See the most recent gerbers on the releases tab. The gerbers included are config
 
 ## Bill of Materials
 
-![iBOM](img/ibom.png)
+See the iBOM in the [BOM](BOM) folder. You will need matched 2N3906 transistors and ideally polystyrene caps for the four filter poles.
 
-See the iBOM in the [BOM](BOM) folder
+![iBOM](img/ibom.png)
 
 ![Panel back](img/back.jpeg)
 
