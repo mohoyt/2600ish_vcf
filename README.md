@@ -18,7 +18,7 @@ See the most recent gerbers on the releases tab. The gerbers included are config
 
 ## Bill of Materials
 
-See the iBOM in the [BOM](BOM) folder. You will need matched 2N3906 transistors and ideally polystyrene caps for the four filter poles.
+See the iBOM in the [BOM](bom) folder. You will need matched 2N3906 transistors and ideally polystyrene caps for the four filter poles.
 
 ![iBOM](img/ibom.png)
 
