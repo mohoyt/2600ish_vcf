@@ -12,6 +12,13 @@ See a longer write up of this project on my website: [https://mohoyt.com/blog/20
 
 Special thanks to [PCBWay](https://pcbway.com) for sponsoring this build.
 
+## Samples
+
+See [samples](samples) folder or examples on Soundcloud:
+- [Triangle wave](https://soundcloud.com/moses-hoyt/2600ish-vcf-triangle-wave)
+- [Square wave](https://soundcloud.com/moses-hoyt/2600ish-vcf-square-wave)
+- [Sawtooth wave](https://soundcloud.com/moses-hoyt/2600ish-vcf-sawtooth-wave)
+
 ## Gerbers
 
 See the most recent gerbers on the releases tab. The gerbers included are configured for PCBWay. There are two sets, one for the panel and one for the PCB. 
